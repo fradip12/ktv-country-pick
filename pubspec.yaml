@@ -1,6 +1,7 @@
 name: ktv_country_pick
 description: "A new Flutter plugin project."
-version: 0.0.1
+version: 1.0.1
+homepage: https://github.com/fradip12/ktv-country-pick.git
 
 environment:
   sdk: '>=3.3.4 <4.0.0'
