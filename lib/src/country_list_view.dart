@@ -188,8 +188,8 @@ class _CountryListViewState extends State<CountryListView> {
       child: InkWell(
         onTap: () {
           country.nameLocalized = CountryLocalizations.of(context)
-              ?.countryName(countryCode: country.countryCode)
-              ?.replaceAll(RegExp(r'\s+'), ' ');
+              ?.countryName(countryCode: country.countryCode);
+          // ?.replaceAll(RegExp(r'\s+'), ' ');
           widget.onSelect(country);
           Navigator.pop(context);
         },
@@ -221,7 +221,8 @@ class _CountryListViewState extends State<CountryListView> {
                     child: Text(
                       CountryLocalizations.of(context)
                               ?.countryName(countryCode: country.countryCode)
-                              ?.replaceAll(RegExp(r'\s+'), ' ') ??
+                          // ?.replaceAll(RegExp(r'\s+'), ' ')
+                          ??
                           country.name,
                       style: _textStyle,
                     ),
